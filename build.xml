@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="films-api">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-latest-released/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Server Runtime [Apache Tomcat v9.0].libraryclasspath">
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/annotations-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina-ant.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina-ha.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina-ssi.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina-storeconfig.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina-tribes.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/catalina.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/ecj-4.20.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/el-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/jasper-el.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/jasper.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/jaspic-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/jsp-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/servlet-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-api.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-cs.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-de.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-ko.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-pt-BR.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-ru.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-i18n-zh-CN.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-jni.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-util-scan.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-util.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/tomcat-websocket.jar"/>
+        <pathelement location="../../Desktop/Desk/Downloads/apache-tomcat-9.0.85/apache-tomcat-9.0.85/lib/websocket-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="src/main/webapp/WEB-INF/lib/gson-2.8.5.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jakarta.activation.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jakarta.xml.bind-api.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jaxb-core.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jaxb-impl.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jaxb-jxc.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jaxb-xjc.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/jstl-1.2.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/mysql-connector-j-8.3.0.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/postgresql-42.7.3.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/xmlpull-1.1.3.1.jar"/>
+        <pathelement location="src/main/webapp/WEB-INF/lib/xstream-1.4.20.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="films-api.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Server Runtime [Apache Tomcat v9.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <classpath refid="films-api.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
